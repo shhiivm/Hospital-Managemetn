@@ -1,0 +1,283 @@
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Navigation bar*/
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*logo and image*/
+#navbar::before{
+    content: "";
+    position: absolute;
+    
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+/*logo and image*/
+#logo{
+
+}
+#logo img{
+    height: 90px;
+    width: 80px;
+    border-radius: 80px;
+    margin: 10px 15px;
+}
+/*List items*/
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 3px 15px;
+}
+#navbar ul li a:hover{
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+
+}
+
+/*Home Section*/
+#home{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("bgim.jpg") center ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#home h1{
+    color: rgb(199, 33, 33);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+/*Services Section*/
+#services{
+    margin: 30px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 4px 6px;
+    border-radius: 30px;
+    background-color: beige;
+    box-shadow: 10px 10px 10px grey;
+}
+#services .box p{
+    text-align: center;
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+
+}
+
+/*Client Section*/
+#client-section{
+    height: 344px;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 100px;
+}
+
+/*Contact Section*/
+#contact{
+position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: thistle;
+    z-index: -1;
+    opacity: .8;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+	outline:none;
+}
+/*Utility Classes*/
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(4, 87, 25);
+    color: white;
+    margin: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px grey;
+	outline: none
+}
+.btn:hover{
+    border: 2px solid red;
+    background-color: steelblue;
+    color: #000;
+    box-shadow: 3px 3px 3px grey;
+	outline: none
+}
+.center{
+    text-align: center;
+}
+
+
+/*Contact Section*/
+
+#contact-pg{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+
+}
+#contact-pg::before{
+    content: "";
+    position: absolute;
+    background: url("Cont.jpg") center center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+/*Appointment*/
+#app{
+	margin-top:40px;
+	margin-bottom:80px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#book{
+	height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	color:green;
+	}
+#sub{
+	cursor:pointer;
+	color:red;
+	padding:2px 12px 2px 12px;
+	background-color:#013;
+	font-weight:200px;
+	border-radius:10px;
+	margin:20px;
+	
+}
+.about{
+	
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	background-color:#011;
+
+}
+.about h1{
+	color:red;
+	font-size:40px;
+	letter-spacing:3px;
+	text-transform:uppercase;
+}
+.about p{
+	color:#fff;
+	font-size:20px;
+	letter-spacing:2px;
+	margin:40px;
+	text-align:center;
+	text-transform:capitalize;
+}
+
+
+
+/*Footer*/
+footer{
+    background-color: #000;
+    color: #fff;
+    
+}

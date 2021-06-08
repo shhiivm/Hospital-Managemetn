@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Top Medical facelities: DocSite</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel ="stylesheet" media="screen and (max-width:855px)" href="phone.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="DocSite.com">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a> </li>
+            
+            <li class="item"><a href="appoint.html">Appointment</a> </li>
+            <li class="item"><a href="about.html">About Us</a> </li>
+            <li class="item"><a href="contact.html">Contact Us</a> </li>
+        </ul>
+    </nav>
+	<section id ="app">
+	<!-- Inserting Appointment Form from w3Schools -->
+<div class="w3-display-center w3-padding w3-col l6 m8">
+    <div class="w3-container w3-green">
+      <h2><i class="fa fa-bed w3-margin-right"></i>Book an Appointment</h2>
+    </div>
+    <div class="w3-container w3-white w3-padding-16">
+      <form action="services.html" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+
+            <label><i class="fa fa-calendar-o"></i> Appointment Date</label>
+            <input class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="Appointment" required="">
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-hospital-o"></i> Specialist</label>
+            <select class="w3-input w3-border" name = "specialist" required="">
+                 <option selected hidden value = "">Select Specialist </option>
+                 <option value = "Audiologist">Audiologist </option>
+                 <option value = "Oncologist">Oncologist </option>
+                 <option value = "Neurologist">Neurologist </option>
+                 <option value = "Gynaecologist">Gynaecologist</option>
+				 <option value = "Dentist">Dentist</option>
+				 <option value = "Cardiologist">Cardiologist</option>
+                 <option value = "Orthopaedic">Orthopaedic surgeon </option>
+				 <option value = "Surgeon">Surgeon </option>
+                 <option value = "OB/GYN">OB/GYN </option>
+                 <option value = "Nephrologist">Nephrologist </option>
+                 <option value = "Psychiatrist">Psychiatrist</option>
+				 <option value = "Immunologist">Immunologist</option>
+				 <option value = "Endocrinologist">Endocrinologist</option>
+                 <option value = "Dermatologist">Dermatologist</option>
+            </select>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-clock-o"></i> Timing</label>
+            <input class="w3-input w3-border" type="time" value="1" name="time"  required="">
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-phone "></i> Phone no.</label>
+          <input class="w3-input w3-border" type="tel" value="+91-" name="phone" required="" maxlength="14">
+          </div>
+        </div>
+		<div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-male"></i> Name</label>
+            <input class="w3-input w3-border" type="Text" value="" name="name"  required="">
+          </div>
+          
+        </div>
+        <button class="w3-button w3-dark-grey" type="submit"><i class="w3-margin-right"></i>Book Now</button>
+
+
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy;www.DocSite.com. All Rights Reserved(2020-2022).
+        </div>
+    </footer>
+
+</body>
+
+</html>

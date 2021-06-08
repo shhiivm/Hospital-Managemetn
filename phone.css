@@ -1,0 +1,26 @@
+/*Navigation*/
+#navbar{
+    flex-direction: column;
+}
+
+/*Home*/
+#home{
+    height: 380px;
+}
+#home::before{
+    height: 480px;
+} 
+#home h1{
+    font-size: 20px;
+}
+#home p{
+    font-size: 13px;
+}
+/*Services*/
+#services{
+    flex-direction: column;
+}
+/*Contact*/
+/*team*/
+/*Footer*/
+/*Utility*/
